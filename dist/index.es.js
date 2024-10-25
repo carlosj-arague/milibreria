@@ -34569,7 +34569,6 @@ function S5(i) {
       Bk,
       {
         type: "password",
-        required: !0,
         disabled: l,
         value: g,
         label: c,

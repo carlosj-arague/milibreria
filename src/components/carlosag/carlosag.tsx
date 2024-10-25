@@ -50,7 +50,6 @@ function CarlosAG(props: CarlosAGProps) {
             <Grid container>
                 <TextField
                     type='password'
-                    required
                     disabled={disabled}
                     value={password}
                     label={text}
