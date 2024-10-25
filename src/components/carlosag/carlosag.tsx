@@ -1,6 +1,5 @@
-import { MouseEventHandler } from 'react';
-
 import { useState } from 'react'
+
 import Grid from '@mui/material/Grid2'
 import Rating from '@mui/material/Rating'
 import TextField from '@mui/material/TextField';
@@ -8,7 +7,7 @@ import TextField from '@mui/material/TextField';
 
 //Declaro la interface del componente.
 export interface CarlosAGProps {
-    text: string; //prop text de tipo string. Es el texto del botón
+    text: string; //prop text de tipo string. Es el texto del campo
     disabled?: boolean; //prop disabled. Es opcional y es de tipo boolean
 }
 //Defino mi componente CustomButton y le digo que las props son las que definí arriba
@@ -20,7 +19,7 @@ function CarlosAG(props: CarlosAGProps) {
     const [password, setPassword] = useState('');
 
 
-    function evalPswd(event) {
+    function evalPswd(event : any) {
         setPassword(event.target.value)
 
         const pswd = event.target.value
@@ -42,6 +41,8 @@ function CarlosAG(props: CarlosAGProps) {
             }
         }
         setRating(currentValue)
+
+        return 
     }
 
     return (
@@ -54,7 +55,7 @@ function CarlosAG(props: CarlosAGProps) {
                     value={password}
                     label={text}
                     onChange={evalPswd} />
-                    <Grid item>
+                    <Grid>
                     <br/>
                     <Rating
                         disabled
@@ -63,10 +64,6 @@ function CarlosAG(props: CarlosAGProps) {
                         max={5} />
                     </Grid>
             </Grid>
-                
-                    
-                    
-            
 
         </>)
 }
