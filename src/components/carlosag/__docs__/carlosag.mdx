@@ -1,0 +1,49 @@
+
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as CarlosAG from "./carlosag.stories.tsx";
+
+<Meta of={CarlosAG} title="CarlosAG" />
+
+# CarlosAG
+
+Componente evaluador de seguridad en contraseñas.
+
+#### Example
+
+<Canvas of={CarlosAG.Primary} />
+
+## Usage
+
+```ts
+import {CarlosAG} from 'milibreria';
+
+function Example(){
+ return (
+ <CarlosAG
+ text: "Password 1",
+ disabled: false,
+ />
+ );
+};
+
+export default Example;
+```
+
+#### Example
+
+<Canvas of={CarlosAG.Secondary} />
+
+## Usage
+
+```ts
+import {CarlosAG} from 'milibreria';
+
+function Example(){
+ return (
+ <CarlosAG
+ text: 'Password 2'
+ disabled: false,
+ />
+ );
+};
