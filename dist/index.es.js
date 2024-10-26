@@ -26443,27 +26443,24 @@ function h5(i) {
 }
 function y5(i) {
   const { bgcolor: l, text: c, txtcolor: v, borderColor: h, borderWidth: g, bghover: m, texthover: C, disabled: x, onClick: R, size: N } = i;
-  return (
-    //Uso el Button de la librería MUI y lo personalizo con las props que pasan a mi componente.
-    /* @__PURE__ */ ge.jsx(
-      m1,
-      {
-        type: "button",
-        onClick: R,
-        disabled: x,
-        size: N,
-        sx: {
-          backgroundColor: l,
-          color: v,
-          border: `${g} solid ${h}`,
-          ":hover": {
-            backgroundColor: m,
-            color: C
-          }
-        },
-        children: c
-      }
-    )
+  return /* @__PURE__ */ ge.jsx(
+    m1,
+    {
+      type: "button",
+      onClick: R,
+      disabled: x,
+      size: N,
+      sx: {
+        backgroundColor: l,
+        color: v,
+        border: `${g} solid ${h}`,
+        ":hover": {
+          backgroundColor: m,
+          color: C
+        }
+      },
+      children: c
+    }
   );
 }
 function o$(i) {
@@ -26941,17 +26938,14 @@ const f$ = Dm(/* @__PURE__ */ ge.jsx("path", {
 }), "Favorite");
 function g5(i) {
   const { color: l, disabled: c, onClick: v } = i;
-  return (
-    //Uso el Button de la librería MUI y lo personalizo con las props que pasan a mi componente.
-    /* @__PURE__ */ ge.jsx(
-      h1,
-      {
-        color: l,
-        onClick: v,
-        disabled: c,
-        children: /* @__PURE__ */ ge.jsx(f$, {})
-      }
-    )
+  return /* @__PURE__ */ ge.jsx(
+    h1,
+    {
+      color: l,
+      onClick: v,
+      disabled: c,
+      children: /* @__PURE__ */ ge.jsx(f$, {})
+    }
   );
 }
 const d$ = Dm(/* @__PURE__ */ ge.jsx("path", {
@@ -26959,17 +26953,14 @@ const d$ = Dm(/* @__PURE__ */ ge.jsx("path", {
 }), "FavoriteBorder");
 function b5(i) {
   const { color: l, disabled: c, onClick: v } = i;
-  return (
-    //Uso el Button de la librería MUI y lo personalizo con las props que pasan a mi componente.
-    /* @__PURE__ */ ge.jsx(
-      h1,
-      {
-        color: l,
-        onClick: v,
-        disabled: c,
-        children: /* @__PURE__ */ ge.jsx(d$, {})
-      }
-    )
+  return /* @__PURE__ */ ge.jsx(
+    h1,
+    {
+      color: l,
+      onClick: v,
+      disabled: c,
+      children: /* @__PURE__ */ ge.jsx(d$, {})
+    }
   );
 }
 function hk({

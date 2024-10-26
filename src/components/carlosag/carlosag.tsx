@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid2'
 import Rating from '@mui/material/Rating'
 import TextField from '@mui/material/TextField';
 
+//Autor: Carlos Jesús Araña Guedes
 export interface CarlosAGProps {
     text: string; //prop text de tipo string. Es el texto del campo
     disabled?: boolean; //prop disabled. Es opcional y es de tipo boolean
@@ -11,18 +12,16 @@ export interface CarlosAGProps {
 
 //Autor: Carlos Jesús Araña Guedes
 function CarlosAG(props: CarlosAGProps) {
-    const { disabled, text} = props
+    const { disabled, text } = props
 
     const [rating, setRating] = useState(0);
     const [password, setPassword] = useState('');
 
     //Funcion para evaluar la complejidad de la contraseña
-    function evalPswd(event : any) {
+    function evalPswd(event: any) {
         setPassword(event.target.value)
-
         const pswd = event.target.value
         var currentValue = 0
-
         if (/\d/.test(pswd)) {
             currentValue++
         }
@@ -41,6 +40,7 @@ function CarlosAG(props: CarlosAGProps) {
         setRating(currentValue)
     }
 
+    //Autor: Carlos Jesús Araña Guedes
     return (
         <>
             <Grid container>
@@ -50,16 +50,15 @@ function CarlosAG(props: CarlosAGProps) {
                     value={password}
                     label={text}
                     onChange={evalPswd} />
-                    <Grid>
-                    <br/>
+                <Grid>
+                    <br />
                     <Rating
                         disabled
                         value={rating}
                         defaultValue={0}
                         max={5} />
-                    </Grid>
+                </Grid>
             </Grid>
-
         </>)
 }
 export default CarlosAG;

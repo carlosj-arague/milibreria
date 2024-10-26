@@ -4,7 +4,7 @@ export interface MyButtonProps {
     txtcolor: string;
     bgcolor: string;
     size?: "small" | "medium" | "large";
-    borderColor: string;
+    borderColor?: string;
     borderWidth?: string;
     bghover: string;
     texthover: string;
