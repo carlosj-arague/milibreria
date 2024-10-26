@@ -4,21 +4,19 @@ import Grid from '@mui/material/Grid2'
 import Rating from '@mui/material/Rating'
 import TextField from '@mui/material/TextField';
 
-
-//Declaro la interface del componente.
 export interface CarlosAGProps {
     text: string; //prop text de tipo string. Es el texto del campo
     disabled?: boolean; //prop disabled. Es opcional y es de tipo boolean
 }
-//Defino mi componente CustomButton y le digo que las props son las que definí arriba
+
+//Autor: Carlos Jesús Araña Guedes
 function CarlosAG(props: CarlosAGProps) {
-    //Paso el valor de las props a un objeto:
     const { disabled, text} = props
 
     const [rating, setRating] = useState(0);
     const [password, setPassword] = useState('');
 
-
+    //Funcion para evaluar la complejidad de la contraseña
     function evalPswd(event : any) {
         setPassword(event.target.value)
 
@@ -41,8 +39,6 @@ function CarlosAG(props: CarlosAGProps) {
             }
         }
         setRating(currentValue)
-
-        return 
     }
 
     return (

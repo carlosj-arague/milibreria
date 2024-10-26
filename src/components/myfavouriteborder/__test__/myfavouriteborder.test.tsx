@@ -5,7 +5,7 @@ import MyFavouriteBorder from "../myfavouriteborder";
 describe("MyFavouriteBorder component", () => {
     it("El botón se debería renderizar correctamente", () => {
         render(<MyFavouriteBorder color="error" />);
-        const myfavouriteb = screen.getByRole("MyFavouriteBorder");
+        const myfavouriteb = screen.getByRole("IconButton");
         expect(myfavouriteb).toBeInTheDocument();
     });
 });

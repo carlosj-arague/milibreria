@@ -8,7 +8,7 @@ export default meta;
 type Story = StoryObj<typeof Example>;
 export const Primary: Story = {
  args: {
-  text: "Password",
+  text: "Password Security",
   disabled: false,
  },
 };
